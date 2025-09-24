@@ -1,0 +1,20 @@
+{
+  "name": "comp-3104",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KooroshFarv/comp-3104.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KooroshFarv/comp-3104/issues"
+  },
+  "homepage": "https://github.com/KooroshFarv/comp-3104#readme"
+}
