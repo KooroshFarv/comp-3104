@@ -1,12 +1,23 @@
+name: Deploy React App
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
-name : CI
-
-on: [push, pull_request]
+on: [push]
 
 jobs:
- build: 
-  runs-on: ubuntu-latest
-  steps:
-  - uses: actions/checkout@v4
-  - run: echo "Lab3"
-    
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.x" # Use the appropriate Node.js version for your project
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run test
+        run: npm run test
